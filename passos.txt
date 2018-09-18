@@ -1,0 +1,10 @@
+docker build -t flaskdock .
+docker run -p 5000:80 --volume=/Users/Luigi/Documents/docker/ flaskdock
+
+
+docker login regpythonazuretalks.azurecr.io
+
+docker tag flaskdock regpythonazuretalks.azurecr.io/flaskdock
+
+docker push regpythonazuretalks.azurecr.io/flaskdoc
+
